@@ -1,0 +1,135 @@
+TRIANGLE VALIDATOR:
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int a,b,c;
+    cin >> a >> b >> c;
+    if(a+b > c && b+c > a && c+a > b)
+        cout << "Yes";
+    else
+        cout << "No";
+    return 0;
+}
+
+---------------------------------------------------------------
+
+COMPUTE A POWER B
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    long a,b,p=1;
+    cin >> a >> b;
+    while(b--){
+        p = p * a;
+    }                                                                   //for(int i = 1; i<=b ;i++)
+    cout << p;
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+COMPUTE N!
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n,fact = 1,i;
+    cin >> n;
+    for(i = 1; i<=n ; i++){
+        fact=fact * i;
+        
+    }
+        cout << fact;
+        
+    
+    
+    return 0;
+}
+
+---------------------------------------------------------------------------------
+
+COMPUTE FIBONACCI SERIES
+
+#include <cmath>                                    
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n,a=0,b=1,c=1,i;
+    cin >> n;
+    for(i = 1; i<n ; i++){
+        
+        c = a + b;
+        a = b;
+        b = c;
+        
+        
+    }
+    cout << c;
+    return 0;
+}
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    int n,a=0,b=1,c=1,i;
+    cin >> n;
+    for(i = 1; i<=n ; i++){
+        
+        
+        a = b;
+        b = c;
+        c = a + b;
+        
+    }
+    cout << a;
+    return 0;
+}
+
+---------------------------------------------------------------------------
+NUMBER OF MULTIPLES
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    long n;  cin >> n;
+    cout << (n/3)+(n/5)-(n/15);
+    return 0;
+        
+}
+------------------------------------------------------------------------------
+
+
+
+
+
